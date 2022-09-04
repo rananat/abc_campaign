@@ -185,7 +185,7 @@ class CustomerCampaignController extends Controller
             return ["status"=>500,"msg"=>"Exception: Customer has not participated yet"];
         }
 
-        if ($customerCampaign and $customerCampaign->status != 'L') {
+        if ($customerCampaign->status != 'L') {
             return ["status"=>500,"msg"=>"Customer has already participated"];
         }
 
